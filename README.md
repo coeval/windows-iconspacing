@@ -5,7 +5,7 @@ Die hier angebotene Registry-Datei stellt korrupte Iconabstand-Werte auf ihre St
 
 Kompatibel mit Windows 8 und Windows 10. 
 
-Anleitung: Lade fix.reg oder fix2.reg (beachte den nachfolgenden Hinweis) herunter und klicke doppelt auf die Datei. Bestätige eventuelle Warnmeldungen, damit die Werte auf ihre Standardeinstellung zurückgesetzt werden können.
+<b>Anleitung:</b> Lade fix.reg oder fix2.reg (beachte den nachfolgenden Hinweis) herunter und klicke doppelt auf die Datei. Bestätige eventuelle Warnmeldungen, damit die Werte auf ihre Standardeinstellung zurückgesetzt werden können.
 
 <b>Hinweis:</b> Nutze fix.reg, wenn fix2.reg nichts gebracht hat. Nutze fix.reg nur, wenn du den Windows Build 1803 oder höher hast.
 
