@@ -9,4 +9,4 @@ Anleitung: Lade fix.reg herunter und klicke doppelt auf die Datei. Bestätige ev
 
 Solltest du <b>Windows 7</b> besitzen, empfiehlt es sich, diesem Tutorial zu folgen, um die Iconabstand-Werte mit Windows eigenen Tools auf ihren Standardwert zurückzusetzen: https://www.youtube.com/watch?v=fG3KjZXPsh8.
 
-<b>Support:</b> coeval@pm.me
+<b>Support:</b> <a href="https://github.com/coeval/winico-restore/issues">GitHub Issues</a>
