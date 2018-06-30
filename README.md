@@ -1,5 +1,3 @@
-<a href="https://github.com/coeval/winico-restore/archive/master.zip">Download</a>
-
 Wenn du Probleme mit dem Abstand der Icons auf deinem Windows Desktop hast, ist dies die Lösung für dich.
 Die hier angebotene Registry-Datei stellt korrupte Iconabstand-Werte auf ihre Standardeinstellung zurück!
 
@@ -11,4 +9,5 @@ Kompatibel mit Windows 8 und Windows 10.
 
 Solltest du <b>Windows 7</b> besitzen, empfiehlt es sich, diesem Tutorial zu folgen, um die Iconabstand-Werte mit Windows eigenen Tools auf ihren Standardwert zurückzusetzen: https://www.youtube.com/watch?v=fG3KjZXPsh8.
 
+<a style="font-size: 15pt;" href="https://github.com/coeval/winico-restore/archive/master.zip">Download</a><br /><br />
 <b>Support:</b> <a href="https://github.com/coeval/winico-restore/issues">GitHub Issues</a>
