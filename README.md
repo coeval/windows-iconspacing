@@ -1,4 +1,4 @@
-# Windows Icon Restore
+<a href="https://github.com/coeval/winico-restore/archive/master.zip">Download</a>
 
 Wenn du Probleme mit dem Abstand der Icons auf deinem Windows Desktop hast, ist dies die Lösung für dich.
 Die hier angebotene Registry-Datei stellt korrupte Iconabstand-Werte auf ihre Standardeinstellung zurück!
