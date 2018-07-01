@@ -94,6 +94,9 @@ R E A D     L I C E N S E
             font-family: Bahnschrift, Arial, "Helvetica Neue", Helvetica, Ubuntu;
             outline: none;
         }
+		body {
+		margin: 15px;
+		}
         a {
         border-bottom: 1px solid transparent;
         color: #3bafe1;
@@ -114,8 +117,6 @@ R E A D     L I C E N S E
             cursor: pointer;
             padding: 3px;
             width: 133px;
-            margin-top: 6px;
-            margin-bottom: 6px;
         }
         button.download-btn:hover {
             background: #37a1ce;
@@ -128,10 +129,136 @@ R E A D     L I C E N S E
             color: white;
             border-bottom: 0px solid transparent !important;
         }
+		.hide {
+		display: none;
+		}
+		.material-checkbox {
+		  position: relative;
+		  display: inline-block;
+		  color: rgba(0, 0, 0, 0.87);
+		  cursor: pointer;
+		  font-size: 14px;
+		  line-height: 18px;
+		}
+
+		.material-checkbox > input {
+		  appearance: none;
+		  -moz-appearance: none;
+		  -webkit-appearance: none;
+		  position: absolute;
+		  z-index: -1;
+		  left: -15px;
+		  top: -15px;
+		  display: block;
+		  margin: 0;
+		  border-radius: 50%;
+		  width: 48px;
+		  height: 48px;
+		  background-color: rgba(0, 0, 0, 0.42);
+		  outline: none;
+		  opacity: 0;
+		  transform: scale(1);
+		  -ms-transform: scale(0); /* Graceful degradation for IE */
+		  transition: opacity 0.5s, transform 0.5s;
+		}
+
+		.material-checkbox > input:checked {
+		  background-color: #2196f3;
+		}
+
+		.material-checkbox:active > input {
+		  opacity: 1;
+		  transform: scale(0);
+		  transition: opacity 0s, transform 0s;
+		}
+
+		.material-checkbox > input:disabled {
+		  opacity: 0;
+		}
+
+		.material-checkbox > input:disabled + span {
+		  cursor: initial;
+		}
+
+		.material-checkbox > span::before {
+		  content: "";
+		  display: inline-block;
+		  margin-right: 15px;
+		  border: solid 2px rgba(0, 0, 0, 0.42);
+		  border-radius: 2px;
+		  width: 14px;
+		  height: 14px;
+		  vertical-align: -4px;
+		  transition: border-color 0.5s, background-color 0.5s;
+		}
+
+		.material-checkbox > input:checked + span::before {
+		  border-color: #2196f3;
+		  background-color: #2196f3;
+		}
+
+		.material-checkbox > input:active + span::before {
+		  border-color: #2196f3;
+		}
+
+		.material-checkbox > input:checked:active + span::before {
+		  border-color: transparent;
+		  background-color: rgba(0, 0, 0, 0.42);
+		}
+
+		.material-checkbox > input:disabled + span::before {
+		  border-color: rgba(0, 0, 0, 0.26);
+		}
+
+		.material-checkbox > input:checked:disabled + span::before {
+		  border-color: transparent;
+		  background-color: rgba(0, 0, 0, 0.26);
+		}
+
+		.material-checkbox > span::after {
+		  content: "";
+		  display: inline-block;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 5px;
+		  height: 10px;
+		  border: solid 2px transparent;
+		  border-left: none;
+		  border-top: none;
+		  transform: translate(5.5px, 1px) rotate(45deg);
+		  -ms-transform: translate(5.5px, 2px) rotate(45deg);
+		}
+
+		.material-checkbox > input:checked + span::after {
+		  border-color: #fff;
+		}
+		::selection {
+		  background: #d3e7ff; /* WebKit/Blink Browsers */
+		}
+		::-moz-selection {  
+		  background: #d3e7ff; /* Gecko Browsers */
+		}
     </style>
     </head>
 
 <body>
+	<!-- Javascript-Bereich -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+	$(function () {
+        $("#chkPassport").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport").show();
+            } else {
+                $("#dvPassport").hide();
+            }
+        });
+    });
+	</script>
+	<!-- Ende des Javascript-Bereiches -->
+
+	<!-- Inhalt -->
     <h1>winico-restore</h1>
     
     <p>Wenn du Probleme mit dem Abstand der Icons auf deinem Windows Desktop hast, ist dies die Lösung für dich. Die hier angebotene Registry-Datei stellt korrupte Iconabstand-Werte auf ihre Standardeinstellung zurück!</p>
@@ -145,10 +272,17 @@ R E A D     L I C E N S E
     
     <p><b>Support:</b> <a href="https://github.com/coeval/winico-restore/issues">GitHub Issues</a></p>
     
+	<p style="font-size: 17pt;">Download-Bereich</p>
+	<label class="material-checkbox" for="chkPassport">
+    <input type="checkbox" id="chkPassport" />
+    <span style="font-size: 12pt;">Ich habe die <a href="https://raw.githubusercontent.com/coeval/coeval.github.io/master/LICENSE.md" target="_blank">Lizenz</a> für diesen Download gelesen und akzeptiere sie.</span>
+	</label><br /><br />
+	<div id="dvPassport" style="display: none">
     <button class="download-btn" onclick="window.location.href = 'https://github.com/coeval/winico-restore/archive/master.zip';"><p><a style="font-size: 15pt;">Download <br /><small><small>2,5 KB</small></small></a></p></button>
+</div>
+    <br />
     
-    <p>Der Download unterliegt folgender <a href="https://raw.githubusercontent.com/coeval/coeval.github.io/master/LICENSE.md">Lizenz</a>.</p>
-    
+	<!-- Ende des Inhaltes -->
     </body>
 
 
