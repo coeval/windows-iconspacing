@@ -249,9 +249,9 @@ R E A D     L I C E N S E
 	$(function () {
         $("#chkPassport").click(function () {
             if ($(this).is(":checked")) {
-                $("#dvPassport").show();
+                $("#dvPassport").fadeIn();
             } else {
-                $("#dvPassport").hide();
+                $("#dvPassport").fadeOut();
             }
         });
     });
